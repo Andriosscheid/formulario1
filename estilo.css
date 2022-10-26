@@ -1,0 +1,93 @@
+*{
+    margin: 0;  /**/
+    padding: 0;
+    box-sizing: border-box; /*agora sempre que eu definir uma largur/altura e colocar padding o tamanho nao sera alterado*/
+}
+body {
+    background: #242933;
+    display: flex; /*definindo flexbox pra todo o site*/
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;  /*alinhar na horizontal*/
+    justify-content: center; /*alinhar na vertical*/
+    min-height: 100vh; /*definindo que no minimo meu body vai ocupar toda a largura da viewport*/
+    border: 0;
+}
+.container {
+    background-color: #2F3644;
+    border: solid #1c1f27 5px; 
+    border-radius: 15px;
+    width: 450px;
+    max-width: 90%;
+}
+header {
+    padding: 30px 40px ;
+}
+header h2 {
+    color: #ACBAE1;
+    font-weight: 600;
+    font-size: 30px;
+}
+#form {
+    padding: 0 40px 30px;
+}
+.form-divs {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-divs label {
+    display: inline-block;  /*display inline-block aqui pra dps com o displat block no input o label ir para cima*/
+    margin-bottom: 5px;
+    color: #828cad;
+}
+.form-divs input{
+    border: 2px #3e445b solid;
+    border-radius: 5px;
+    outline: 0;
+    display: block; 
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+}
+.form-divs i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden; /*escondendo os icones para eles so aparecerem no erro ou acerto*/
+}
+.form-divs small{
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+    visibility: hidden;
+}
+.form-divs.error input {  /*definindo a classe que so vou adicionar no jS com cor indicando erro ou acerto*/
+    border: 3px #db5a5a solid;
+}
+.form-divs.success input {
+    border: 3px #4eca64 solid;
+}
+#form .form-divs.error i .img-error {
+    visibility: visible;
+}
+#form .form-divs.success i .img-success {
+    visibility: visible;
+}
+#form .form-divs.error small{
+    visibility: visible;
+}
+#form button {
+    background-color: #6c63ff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
+}

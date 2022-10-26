@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="container">  
+        <header>
+          <h2>Criar conta</h2>
+        </header>
+
+      <form id="form" >
+        <div class="form-divs">
+          <label for="usarname">Nome</label>
+          <input type="text" id="usarname" />
+          <i><img src="./img/success-icon.svg" class="img-success" /></i>
+          <i><img src="./img/error-icon.svg" class="img-error" /></i>
+          <small class="error">Error message</small>
+        </div>
+
+        <div class="form-divs">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <i><img src="./img/success-icon.svg" class="img-success" /></i>
+          <i><img src="./img/error-icon.svg" class="img-error" /></i>
+          <small class="error">Error message</small>
+        </div>
+
+        <div class="form-divs">
+          <label for="password">senha</label>
+          <input type="password" id="password" />
+          <i><img src="./img/success-icon.svg" class="img-success" /></i>
+          <i><img src="./img/error-icon.svg" class="img-error" /></i>
+          <small class="error">Error message</small>
+        </div>
+
+        <div class="form-divs">
+          <label for="passwordTrue">Confirme sua senha</label>
+          <input type="password" id="passwordTrue" />
+          <i><img src="./img/success-icon.svg" class="img-success" /></i>
+          <i><img src="./img/error-icon.svg" class="img-error" /></i>
+          <small class="error">Error message</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
